@@ -1,16 +1,16 @@
-   /* Reset and basic styling */
-        body {
-            margin: 0;
-            height: 100vh;
-            background-color: black;
-            color: white;
-            font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
+body {
+    margin: 0;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* remove justify-content: center */
+    min-height: 100vh;
+    padding-top: 80px; /* leave space for navbar */
+}
 
         /* Navbar styling */
         nav {
