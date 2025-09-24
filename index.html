@@ -3,93 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>My Game Site</title>
-    <style>
-        /* Reset and basic page styling */
-        body {
-            margin: 0;
-            height: 100vh;
-            background-color: black;
-            color: white;
-            font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
+   
+     
+    
+    <link rel="stylesheet" href="style.css">
 
-        /* Navbar styling */
-        nav {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-color: #111;
-            padding: 15px 20px;
-            display: flex;
-            justify-content: center;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.5);
-            z-index: 100;
-        }
-
-        nav select {
-            padding: 5px 10px;
-            font-size: 16px;
-            background-color: black;
-            color: white;
-            border: 1px solid white;
-            cursor: pointer;
-        }
-
-        nav select option {
-            background-color: black;
-            color: white;
-        }
-
-        /* Main content */
-        #centerContent {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-
-        p {
-            font-size: 1.2rem;
-        }
-    </style>
 </head>
 <body>
 
     <nav>
-        <select id="travelDropdown" onchange="navigate()">
-            <option value="#">Travel to...</option>
-            <option value="game1.html">Game 1</option>
-            <option value="game2.html">Game 2</option>
-            <option value="about.html">About</option>
-        </select>
+        <a href="#" class="logo">MyLogo</a>
+        <div class="nav-links">
+            <a href="game1.html">Game 1</a>
+            <a href="game2.html">Game 2</a>
+            <a href="about.html">About</a>
+        </div>
     </nav>
 
     <div id="centerContent">
         <h1>Welcome to My Game Page</h1>
-        <p>Use the navbar above to navigate.</p>
+        <p>Use the links above to navigate.</p>
     </div>
-
-    <script>
-        function navigate() {
-            const select = document.getElementById('travelDropdown');
-            const value = select.value;
-            if (value !== "#") {
-                window.location.href = value;
-            }
-        }
-    </script>
 
 </body>
 </html>
-
 
