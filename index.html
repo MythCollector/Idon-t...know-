@@ -4,29 +4,35 @@
     <meta charset="UTF-8">
     <title>My Game Site</title>
     <style>
-        /* Basic page styling */
+        /* Reset and basic page styling */
         body {
             margin: 0;
             height: 100vh;
             background-color: black;
             color: white;
+            font-family: Arial, sans-serif;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            font-family: Arial, sans-serif;
             text-align: center;
         }
 
-        /* Dropdown at the top */
-        header {
+        /* Navbar styling */
+        nav {
             position: absolute;
-            top: 20px;
-            left: 50%;
-            transform: translateX(-50%);
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #111;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+            z-index: 100;
         }
 
-        select {
+        nav select {
             padding: 5px 10px;
             font-size: 16px;
             background-color: black;
@@ -35,26 +41,42 @@
             cursor: pointer;
         }
 
-        select option {
+        nav select option {
             background-color: black;
             color: white;
+        }
+
+        /* Main content */
+        #centerContent {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2rem;
         }
     </style>
 </head>
 <body>
 
-    <header>
+    <nav>
         <select id="travelDropdown" onchange="navigate()">
             <option value="#">Travel to...</option>
             <option value="game1.html">Game 1</option>
             <option value="game2.html">Game 2</option>
             <option value="about.html">About</option>
         </select>
-    </header>
+    </nav>
 
     <div id="centerContent">
         <h1>Welcome to My Game Page</h1>
-        <p>Use the dropdown above to travel to different pages.</p>
+        <p>Use the navbar above to navigate.</p>
     </div>
 
     <script>
@@ -69,4 +91,5 @@
 
 </body>
 </html>
+
 
