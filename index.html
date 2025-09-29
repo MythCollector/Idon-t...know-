@@ -1,3 +1,4 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,12 +7,21 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Five Nights at Candy's Fangame</h1>
   <div id="office">
-    <button onclick="switchCamera('left')">Left Cam</button>
-    <button onclick="switchCamera('right')">Right Cam</button>
-    <div id="camera-feed">Static...</div>
+    <div id="camera-feed"></div>
+    <div id="ui">
+      <button onclick="switchCamera('cam1')">CAM 1</button>
+      <button onclick="switchCamera('cam2')">CAM 2</button>
+      <div id="power">Power: 100%</div>
+      <div id="clock">12:00 AM</div>
+    </div>
   </div>
+
+  <img id="jumpscare" src="assets/images/candy_jumpscare.png" style="display:none;">
+
+  <audio id="jumpscare-sound" src="assets/audio/jumpscare.mp3"></audio>
+  <audio id="night-music" src="assets/audio/night_music.mp3" loop autoplay></audio>
+
   <script src="game.js"></script>
 </body>
 </html>
