@@ -1,15 +1,42 @@
+/* style.css */
 body {
+  margin: 0;
   background: black;
   color: white;
   font-family: sans-serif;
   text-align: center;
 }
 
+#office {
+  position: relative;
+  width: 800px;
+  height: 600px;
+  margin: 50px auto;
+  background: url('assets/images/office.png') no-repeat center/cover;
+}
+
 #camera-feed {
-  margin: 20px auto;
-  padding: 20px;
-  border: 2px solid white;
-  width: 300px;
-  height: 200px;
-  background: #111;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+
+#ui {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#jumpscare {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
