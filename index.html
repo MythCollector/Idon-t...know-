@@ -1,31 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>My Game Site</title>
-   
-     <!-- Should fix scaling?-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="style.css">
-
+  <meta charset="UTF-8">
+  <title>FNaC Fangame</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <nav>
-        <a href="#" class="logo">MyLogo</a>
-        <div class="nav-links">
-            <a href="game1.html">Game 1</a>
-            <a href="game2.html">Game 2</a>
-            <a href="about.html">About</a>
-        </div>
-    </nav>
-
-    <div id="centerContent">
-        <h1>Welcome to My Game Page</h1>
-        <p>Use the links above to navigate.</p>
-    </div>
-
+  <h1>Five Nights at Candy's Fangame</h1>
+  <div id="office">
+    <button onclick="switchCamera('left')">Left Cam</button>
+    <button onclick="switchCamera('right')">Right Cam</button>
+    <div id="camera-feed">Static...</div>
+  </div>
+  <script src="game.js"></script>
 </body>
 </html>
+
 
